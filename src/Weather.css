@@ -26,6 +26,7 @@ li {
   margin-left: 10px;
   font-weight: 400;
   position: relative;
+  top: 20px;
 }
 
 form {
@@ -42,6 +43,6 @@ form {
   font-size: 16px;
   font-weight: 400;
   position: relative;
-  top: -32px;
+  top: -14px;
   line-height: 1;
 }
