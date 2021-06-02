@@ -23,7 +23,7 @@ li {
   color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 64px;
-  margin-left: 10px;
+
   font-weight: 400;
   position: relative;
   top: 20px;
@@ -35,8 +35,6 @@ form {
 
 .img {
   height: 64px;
-  position: relative;
-  bottom: -64px;
 }
 
 .unit {
