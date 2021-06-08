@@ -1,23 +1,34 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
 
-export default function WeatherForecastIcon() {
-  let [icon, setIcon] = useState(null);
-  let [iconLoaded, setIconLoaded] = useState(false);
+export default function WeatherForecastIcon(props) {
+  const codeMapping = {
+    "01d": "CLEAR_DAY",
+    "01n": "CLEAR_NIGHT",
+    "02d": "PARTLY_CLOUDY_DAY",
+    "02n": "PARTLY_CLOUDY_NIGHT",
+    "03d": "PARTLY_CLOUDY_DAY",
+    "03n": "PARTLY_CLOUDY_NIGHT",
+    "04d": "CLOUDY",
+    "04n": "CLOUDY",
+    "09d": "RAIN",
+    "09n": "RAIN",
+    "10d": "RAIN",
+    "10n": "RAIN",
+    "11d": "RAIN",
+    "11n": "RAIN",
+    "13d": "SNOW",
+    "13n": "SNOW",
+    "50d": "FOG",
+    "50n": "FOG",
+  };
 
-  function getIcon(response) {
-    setIcon(response.data.weather[0].icon);
-    setIconLoaded(true);
-  }
-
-  let apiKey = "b794ad181ed9eb7110f0ec8bbaa4f48d";
-  let city = "New York";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-
-  axios.get(apiUrl).then(getIcon);
-  if (iconLoaded) {
-    return icon;
-  } else {
-    return "not loaded";
-  }
+  return (
+    <ReactAnimatedWeather
+      icon={codeMapping[props.code]}
+      color="#1e1e1e"
+      size={props.size}
+      animate={true}
+    />
+  );
 }
