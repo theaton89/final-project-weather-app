@@ -4,6 +4,7 @@
 
 h1 {
   font-size: 24px;
+
   font-weight: 400;
   margin-top: 20px;
   line-height: 29px;
@@ -18,7 +19,7 @@ ul {
 li {
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 22px;
   list-style: none;
 }
 
