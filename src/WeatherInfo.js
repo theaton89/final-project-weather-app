@@ -1,6 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import WeatherTemperature from "./WeatherTemperature";
+
 import WeatherForecastIcon from "./WeatherForecastIcon";
 
 export default function WeatherInfo(props) {
@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
               <WeatherForecastIcon code={props.data.icon} />
             </div>
             <div className="float-left">
-              <WeatherTemperature fahrenheit={props.data.temperature} />
+              {Math.round(props.data.temperature)}°F
             </div>
           </div>
         </div>
