@@ -4,7 +4,6 @@
 
 h1 {
   font-size: 24px;
-  color: black;
   font-weight: 400;
   margin-top: 20px;
   line-height: 29px;
@@ -13,6 +12,7 @@ h1 {
 ul {
   margin: 0;
   padding: 0;
+  color: rgb(135, 135, 135);
 }
 
 li {
@@ -37,10 +37,14 @@ form {
 }
 
 .unit {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   position: relative;
-  top: -32px;
+  top: -30px;
   line-height: 1;
   left: 14px;
+}
+
+.btn {
+  color: white;
 }
