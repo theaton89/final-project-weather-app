@@ -1,3 +1,10 @@
-.index {
-  background-color: red;
+.container-fluid {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
