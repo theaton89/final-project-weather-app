@@ -6,8 +6,10 @@
 p {
   font-size: 12px;
   margin-left: 4px;
+  color: white;
+  text-align: center;
 }
 
-body {
-  background: blue;
+.App a {
+  color: white;
 }
