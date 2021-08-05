@@ -12,6 +12,7 @@ function App() {
           href="https://www.youtube.com/channel/UC0rQDkXDNeidKnUafldmpdA"
           target="_blank"
           rel="noreferrer"
+          title="Taylor Heaton's Site"
         >
           Taylor Heaton
         </a>{" "}
@@ -20,6 +21,7 @@ function App() {
           href="https://github.com/theaton89/final-project-weather-app"
           target="_blank"
           rel="noreferrer"
+          title="Taylor Heaton's Github"
         >
           open-sourced on GitHub
         </a>{" "}
@@ -28,6 +30,7 @@ function App() {
           href="https://jovial-bose-b591a2.netlify.app"
           target="_blank"
           rel="noreferrer"
+          title="Taylor Heaton's Netlify site"
         >
           hosted on Netlify
         </a>
